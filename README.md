@@ -9,15 +9,15 @@ Esse projeto é parte da avaliação da disciplina INE5645 - da UFSC, que implem
 
 # Em andamento:
 
-- [-] Modelo produtor/consumidor: O código implementa o modelo produtor/consumidor. Os sensores (produtores) geram dados aleatórios e a Central de Controle (consumidor) processa esses dados.
+- [] Modelo produtor/consumidor: O código implementa o modelo produtor/consumidor. Os sensores (produtores) geram dados aleatórios e a Central de Controle (consumidor) processa esses dados.
 
-- [-] Pool de threads: O código usa o módulo multiprocessing para criar processos separados para cada sensor. No entanto, não está claro se a Central de Controle opera sobre várias unidades de processamento, como exigido.
+- [] Pool de threads: O código usa o módulo multiprocessing para criar processos separados para cada sensor. No entanto, não está claro se a Central de Controle opera sobre várias unidades de processamento, como exigido.
 
-- [-] Fork-join: O código não implementa explicitamente o modelo fork-join. Para cada dado sensorial recebido, a Central de Controle define um atuador e um nível de atividade, mas não há divisão explícita de tarefas em subtarefas que são então reunidas.
+- [] Fork-join: O código não implementa explicitamente o modelo fork-join. Para cada dado sensorial recebido, a Central de Controle define um atuador e um nível de atividade, mas não há divisão explícita de tarefas em subtarefas que são então reunidas.
 
-- [-] Falhas: O código não implementa a possibilidade de falhas na execução das subtarefas.
+- [] Falhas: O código não implementa a possibilidade de falhas na execução das subtarefas.
 
-- [-] Exclusão mútua: O código usa um multiprocessing.Lock para garantir a exclusão mútua ao acessar a tabela de atuadores, o que está de acordo com os requisitos.
+- [] Exclusão mútua: O código usa um multiprocessing.Lock para garantir a exclusão mútua ao acessar a tabela de atuadores, o que está de acordo com os requisitos.
 
 - [-] Parametrização: O número de sensores e atuadores é parametrizável, mas está codificado diretamente no código. Seria melhor se esses valores pudessem ser passados como argumentos para o programa.
 
